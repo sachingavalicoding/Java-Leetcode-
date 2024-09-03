@@ -1,0 +1,201 @@
+/*  css reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 500;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 0.7rem 2.25rem;
+  border-radius: 8px;
+  width: fit-content;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-red {
+  color: white;
+  background-color: red;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+.btn-red-tr {
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: all 0.3s linear;
+}
+.btn-red-tr:hover {
+  color: white;
+  background-color: red;
+  border: 1px solid transparent;
+}
+.btn-red:hover {
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.navbar__container h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar li {
+  font-weight: 400;
+  color: white;
+}
+
+.main__container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./images/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContent__container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent__container .content {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 700px;
+  height: max-content;
+  padding: 5px 15px;
+}
+
+.mainContent__container .content h1 {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.mainContent__container .content h1 span {
+  color: red;
+}
+
+.mainContent__container .content p {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/*  about page  */
+
+.about__container {
+  width: 100%;
+  min-height: 25rem;
+  padding: 1rem 0rem;
+}
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  place-content: center;
+  padding: 10px 0px;
+}
+.about__content .content {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.about__content .content h2 {
+  font-size: 2rem;
+}
+.about__content .content p {
+  margin-bottom: 1rem;
+}
+/*   service  */
+.service__container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/body_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0rem;
+}
+.service__content {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.service__content .service {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+}
+.service img {
+  width: 50px;
+}
+
+.service__heading {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
