@@ -1,0 +1,17 @@
+class PronicRange 
+{
+	public static void main(String[] args) 
+	{
+		int start = 100;
+		int end = 200;
+		int i = 1;
+		int count;
+		while(i < end) {
+			count = (i * (i + 1));
+			if(start <= count  && count <= end){
+			 System.out.print(count + " " );	 
+		 }
+		 i++;
+		}
+	}
+}
